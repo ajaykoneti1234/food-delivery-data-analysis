@@ -1,0 +1,24 @@
+issue,affected_column,affected_rows,action_taken,reason
+Whitespace/case label consistency,Weather_conditions,0,Checked; no changes,Only equivalent labels were standardized; no unsupported spelling assumptions
+Whitespace/case label consistency,Road_traffic_density,0,Checked; no changes,Only equivalent labels were standardized; no unsupported spelling assumptions
+Whitespace/case label consistency,Type_of_order,0,Checked; no changes,Only equivalent labels were standardized; no unsupported spelling assumptions
+Whitespace/case label consistency,Type_of_vehicle,0,Checked; no changes,Only equivalent labels were standardized; no unsupported spelling assumptions
+Whitespace/case label consistency,Festival,0,Checked; no changes,Only equivalent labels were standardized; no unsupported spelling assumptions
+Whitespace/case label consistency,City,0,Checked; no changes,Only equivalent labels were standardized; no unsupported spelling assumptions
+Missing values,Delivery_person_Age,1854,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,Delivery_person_Ratings,1908,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,Time_Orderd,1731,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,Weather_conditions,616,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,Road_traffic_density,601,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,multiple_deliveries,993,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,Festival,228,Retained as missing,No validated source or defensible imputation rule is provided
+Missing values,City,1200,Retained as missing,No validated source or defensible imputation rule is provided
+Exact duplicate records,all columns,0,Retained; none removed,Duplicate check completed; no automatic deletion
+Duplicate record IDs,ID,0,Retained; none removed,Record ID uniqueness checked
+Ratings above 5,Delivery_person_Ratings,53,Flagged; retained,Rating scale not confirmed by source; cannot safely correct
+Negative restaurant coordinates,Restaurant_latitude / Restaurant_longitude,431,Flagged; retained,Negative coordinates are not intrinsically invalid; requires geospatial validation
+Potential placeholder delivery coordinates,Delivery_location_latitude / Delivery_location_longitude,327,Flagged; retained,Coordinates need external verification before modification
+Nonpositive delivery duration,Time_taken (min),0,Checked; retained,Duration range checked; no automatic record removal
+Order date parseability,Order_Date,0,Validated; original text preserved,Day-month-year format verified without altering source values
+Time parseability,Time_Orderd,4068,Validated; original text preserved,HH:MM format checked; no timezone or date invented
+Time parseability,Time_Order_picked,5007,Validated; original text preserved,HH:MM format checked; no timezone or date invented

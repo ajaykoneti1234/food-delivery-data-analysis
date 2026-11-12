@@ -1,0 +1,5 @@
+Type_of_vehicle,count,mean,median
+motorcycle,26429,27.61,26.0
+bicycle,68,26.43,26.0
+scooter,15273,24.48,24.0
+electric_scooter,3814,24.47,24.0
