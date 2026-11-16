@@ -44,3 +44,24 @@ requirements.txt
 - **Multiple**: highest mean category `3.0` (47.82 min), lowest `0.0` (22.88 min). Compare sample sizes in `docs/multiple_summary.csv`.
 
 Missing fields, anomalous coordinates, undocumented variable codes and observational confounding limit interpretation. Straight-line distance is not road distance. No machine learning is required by the brief.
+
+
+
+## Week 2 — Exploratory Data Analysis (EDA)
+
+Continued using the cleaned dataset from Week 1 (45,584 records).
+
+### Analysis completed
+- Calculated delivery-time statistics: count, mean, median, minimum, maximum, quartiles, and standard deviation.
+- Compared delivery durations across traffic conditions, weather conditions, and vehicle types.
+- Examined delivery-person ratings and multiple-delivery counts.
+- Calculated the Pearson correlation between approximate straight-line distance and delivery duration.
+- Created an initial distance-versus-duration scatter plot.
+- Documented six numerical observations with group sizes and interpretations.
+
+### Week 2 deliverables
+- `notebooks/02_exploratory_data_analysis.ipynb`
+- `visualizations/initial_distance_vs_duration.png`
+
+### Limitations
+Delivery-partner experience in years is not available in the dataset. Delivery-person age is not used as a substitute for experience. Approximate straight-line distance differs from actual road distance. Observed relationships do not establish causation.
