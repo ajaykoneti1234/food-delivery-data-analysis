@@ -65,3 +65,32 @@ Continued using the cleaned dataset from Week 1 (45,584 records).
 
 ### Limitations
 Delivery-partner experience in years is not available in the dataset. Delivery-person age is not used as a substitute for experience. Approximate straight-line distance differs from actual road distance. Observed relationships do not establish causation.
+
+## Week 3 — Visualization & Interpretation
+
+Continued using the cleaned food delivery dataset from Weeks 1 and 2 to create five finalized visualizations using Python, Pandas, NumPy, Matplotlib, and Seaborn.
+
+### Visualizations Created
+
+1. **Delivery Duration Distribution — Histogram:** Shows the frequency and distribution of delivery durations, including the concentration of values and potential extreme observations.
+2. **Traffic Comparison — Bar Chart:** Compares median delivery duration across traffic categories to highlight observed differences.
+3. **Weather Comparison — Bar Chart:** Compares mean delivery duration across weather conditions to identify higher and lower averages.
+4. **Distance vs Delivery Duration — Scatter Plot:** Examines the relationship between approximate straight-line delivery distance and delivery duration, including unusual coordinate-derived distances.
+5. **Vehicle Comparison — Box Plot:** Compares delivery-duration medians, interquartile ranges, spread, and outliers across vehicle types.
+
+### Week 3 Deliverables
+
+- [Week 3 Visualization Notebook](notebooks/03_visualization.ipynb)
+- [01 — Delivery Duration Distribution](visualizations/01_delivery_duration_distribution.png)
+- [02 — Traffic Comparison](visualizations/02_traffic_comparison.png)
+- [03 — Weather Comparison](visualizations/03_weather_comparison.png)
+- [04 — Distance vs Duration](visualizations/04_distance_vs_duration.png)
+- [05 — Vehicle Comparison](visualizations/05_vehicle_comparison.png)
+
+### Main Observations and Limitations
+
+The dataset has an overall average delivery duration of approximately 26.29 minutes. Earlier exploratory analysis found higher average delivery durations for Jam traffic than Low traffic, and for Cloudy weather than Sunny weather. The Week 3 charts present the corresponding distributional and group comparisons, with numerical results and 2–3 sentence interpretations in the visualization notebook.
+
+Delivery distances are approximate straight-line measurements rather than actual road distances. Some coordinate values are anomalous, and differences between categories may reflect other operational factors. The observed associations do not establish causation.
+
+The Week 1 and Week 2 notebooks and outputs have been preserved.
