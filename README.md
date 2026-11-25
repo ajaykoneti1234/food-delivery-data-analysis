@@ -94,3 +94,40 @@ The dataset has an overall average delivery duration of approximately 26.29 minu
 Delivery distances are approximate straight-line measurements rather than actual road distances. Some coordinate values are anomalous, and differences between categories may reflect other operational factors. The observed associations do not establish causation.
 
 The Week 1 and Week 2 notebooks and outputs have been preserved.
+
+
+
+## Week 4 — Final Findings and Reporting
+
+The final notebook, [04_final_analysis.ipynb](notebooks/04_final_analysis.ipynb), verifies the cleaned dataset, recalculates metrics used in previous weeks, checks the five finalized PNG files, and documents seven findings and three proposed operational investigations. The analysis uses the same 45,584 delivery records as earlier weeks.
+
+### Seven key findings
+
+1. Overall delivery duration: mean 26.29 minutes and median 26 minutes across 45,584 deliveries.
+2. Traffic: Jam median 31 minutes (n=14,139), compared with Low median 20 minutes (n=15,476).
+3. Weather: Cloudy mean 28.92 minutes (n=7,533), compared with Sunny mean 21.86 minutes (n=7,282).
+4. Vehicle: motorcycle mean 27.61 minutes (n=26,429), compared with electric scooter mean 24.47 minutes (n=3,814).
+5. Multiple deliveries: three deliveries mean 47.82 minutes (n=361), compared with zero mean 22.88 minutes (n=14,094).
+6. Festival: Yes mean 45.52 minutes (n=896), compared with No mean 25.98 minutes (n=44,460).
+7. Straight-line distance: Pearson correlation with duration approximately -0.0029 over 41,944 valid coordinate pairs; 431 distances exceed 100 km and warrant quality review.
+
+### Proposed operational investigations
+
+1. Investigate traffic-aware dispatch and ETA calibration, using matched orders and a monitored pilot.
+2. Review multi-order batching limits and sequencing, controlling for order complexity and demand.
+3. Check staffing and capacity planning during festival periods, validating differences across comparable locations and dates.
+
+These are suggestions for testing, not guaranteed improvements. Category differences are observational and do not prove causation.
+
+### Project workflow and reproducibility
+
+- Week 1: [Data understanding and cleaning](notebooks/01_data_understanding_and_cleaning.ipynb) and [cleaning log](docs/cleaning_log.csv).
+- Week 2: [Exploratory analysis](notebooks/02_exploratory_data_analysis.ipynb).
+- Week 3: [Visualization notebook](notebooks/03_visualization.ipynb) and the five PNG charts in [visualizations/](visualizations/).
+- Week 4: [Final analysis, findings, recommendations and limitations](notebooks/04_final_analysis.ipynb).
+
+Install packages with `pip install -r requirements.txt`. Run notebooks from the repository root (or from `notebooks/`, where supported by the notebook path fallback). The prepared dataset is at `data/processed/cleaned_food_delivery.csv`. To rerun raw cleaning, obtain the raw dataset from the documented source in `data/raw/README.md`; the raw dataset is not redistributed pending license confirmation.
+
+### Limitations and next steps
+
+Missing categories and partner-experience data, uneven group sizes, observational confounding, and anomalous coordinates limit interpretation. Straight-line distance does not represent actual road distance. Validate category definitions, examine matched operational scenarios, and evaluate proposed changes with controlled pilots before adoption.
